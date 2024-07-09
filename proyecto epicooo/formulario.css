@@ -1,0 +1,91 @@
+.form{
+
+    background-color: rgb(179, 59, 59);
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px 40px;
+   
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body{
+    font-family: "lato",sans-serif;
+    
+}
+
+.title{
+    color: aliceblue;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.imputcontainer{
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+   
+}
+
+.input{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 2px  solid rgb(253, 253, 253);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0 20px;
+    background: none;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.label{
+    color: aliceblue;
+    margin-left: 7px;
+    margin-top: 9px;
+   
+}
+
+
+::placeholder{
+
+    color: transparent;
+}
+
+.button{
+    display: block;
+    margin-left: auto;
+    padding: 8PX 15PX;
+    border: none;
+    background-color: rgb(200, 81, 81);
+    color: rgb(253, 249, 249);
+    border-radius: 6px ;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+.button:hover{
+    background-color: brown;
+    transform: translatex(-1px);
+}
+
+.input:hover{
+    border: 2PX solid rgb(227, 83, 83);
+}
+.input:focus + .label{
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14PX;
+    font-weight: 600;
+    color:brown;
+}

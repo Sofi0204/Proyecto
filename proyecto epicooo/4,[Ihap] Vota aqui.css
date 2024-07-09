@@ -1,0 +1,152 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.eslogan {
+    font-size: 1em;
+    margin: 0; /* Elimina el margen predeterminado */
+    margin-top: 5px; /* Ajusta el margen superior según tus preferencias */
+    align-self: start; /* Alinea verticalmente en la parte superior */
+}
+
+.contenido {
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el header en dos columnas iguales */
+    background-color: #2b52cf;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 95%;
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+
+.IHAP {
+    color: #ffffff;
+    margin: 0; /* Elimina el margen predeterminado */
+    margin-top: 5px; /* Ajusta el margen superior según tus preferencias */
+    align-self: start; /* Alinea verticalmente en la parte superior */
+}
+
+.logo{
+    text-align: left;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+/* Estilos del recuadro "Vota aquí" */
+.vota-aqui-box {
+    background-color: rgb(255, 255, 255); /* Color de fondo del recuadro */
+    padding: 10px; /* Espaciado interno del recuadro */
+    font-size: 30px;
+}
+
+
+
+
+/* Estilos del texto "Vota aquí" */
+.vota-aqui {
+    color: #000000; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+
+
+
+/* Estilos para las imágenes y sus textos en recuadros */
+.centered-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Para que las imágenes se envuelvan en filas si no caben en una sola línea */
+}
+
+
+
+
+.image-box {
+    width: 33.33%; /* Para que haya 3 imágenes en una fila (ajusta según sea necesario) */
+    text-align: center; /* Centramos el contenido de los recuadros de imagen */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+
+
+
+.image-box img {
+    max-width: 100%;
+    height: fit-content;
+}
+
+
+.image-text {
+    margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    font-weight: bold;
+}
+
+.imagen img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+
+/* Estilos para el botón de navegación a la otra sección */
+.boton-seccion {
+    bottom: 5px; /*Ajusta la distancia desde la parte inferior según tu preferencia */
+    left: 1150px; /* Ajusta la distancia desde la derecha según tu preferencia */
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 5px 10px;
+    width: 80px;
+    border: 1px solid;
+    border-radius: 1000px; /*Permite modicficar la apariencia del boton */
+    display: inline-block;
+    transition: all .2s; /* Permite controlar la velocidad de la transición */
+    position: relative;
+}
+
+
+.boton-seccion:hover {
+    transform: translateY(-5px); /*Permite modificar el espacio de la coordenada */ 
+    box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.boton-seccion:active {
+    transform: translateY(-3px); /*Permite modificar el espacio de la coordenada */ 
+   }
+   
+.boton-seccion::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0; /*Especifica parte de la posición de un elemento posicionado */
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all .3s;
+   }
+   
+.boton-seccion:hover::after {
+    background-color: #2b52cf;
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0; /*Define la transparencia de un elemento */
+   }
+
+
+
+
+
+
+

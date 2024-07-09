@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script>
+        function validar() {
+            var usuario= document.getElementById("usuario").value;
+            var contrasena = document.getElementById("contrasena").value;
+            
+            if(usuario=== "maria" && contrasena=== "maria"){
+                alert("inicio de sesion exitiso");
+                window.location.href="sistema.html"
+            }else{
+                alert("incio de sesion fallida")
+            }
+
+
+        }
+    </script>
+</head>
+<body bgcolor=#1c0d02>
+    <div class="todo">
+        <form action="" class="form">
+            <h1 class="title"> ingreso </h1>
+            <div class="imputcontainer" >
+                <label for="" class="label" > usuario </label>
+                <input type="text" class="input" id="usuario" name="usuario" placeholder="Usuario">
+
+            </div>
+            <div class="imputcontainer">
+                <label  for="" class="label">  contraseña </label>
+                <input type="password" class="input"  id="contrasena" name="contrasena" placeholder="contraseña">
+            </div>
+           <input type="button" class="button" value="ingresar" onclick="validar()">
+        </form>
+    </div>
+
+
+    
+    </body>
+</html>
+

@@ -1,0 +1,204 @@
+  
+      <div class="gallery-wrapper">
+        <div class="gallery-scroll">
+          <div class="gallery">
+            <div class="item">
+              <img src="fotos/amarillo1.png" alt="Image" />
+            </div>
+            <div class="item">
+              <img src="fotos/amarillo2.png" alt="Image" />
+            </div>
+            <div class="item">
+              <img src="fotos/amarillo3.png" alt="Image" />
+            </div>
+            <div class="item">
+                <img src="fotos/amarrillo4.png" alt="Image" />
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="gallery-wrapper">
+    <div class="gallery-scroll">
+      <div class="gallery">
+        <div class="item">
+          <img src="fotos/verde4.png" alt="Image" />
+        </div>
+        <div class="item">
+          <img src="fotos/verde2.png" alt="Image" />
+        </div>
+        <div class="item">
+          <img src="fotos/verde3.png" alt="Image" />
+        </div>
+        <div class="item">
+            <img src="fotos/verde 1.png" alt="Image" />
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+.gallery-wrapper {
+    background-color: #000000;
+    box-sizing: border-box;
+    height: 255px;
+    overflow: hidden;
+    margin-left: 2% ;
+    margin-right: 2%;
+    border-radius: 15px;
+
+    
+  }
+  
+  .gallery-scroll {
+    box-sizing: border-box;
+    height: 255px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .gallery {
+    background-color: #000000;
+    display: flex;
+    box-sizing: border-box;
+    width: max-content;
+    height: 240px;
+    padding: 0px 17.5px;
+  }
+  
+  .item {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0px 17.5px;
+  }
+  
+  .item img {
+    display: block;
+    height: 100%;
+  }
+
+  
+
+
+
+
+  <div class="todo">
+    <form action="" class="form">
+        <h1 class="title"> ingreso </h1>
+        <div class="imputcontainer" >
+            <label for="" class="label" > usuario </label>
+            <input type="text" class="input" id="usuario" name="usuario" placeholder="Usuario">
+
+        </div>
+        <div class="imputcontainer">
+            <label  for="" class="label">  contraseña </label>
+            <input type="password" class="input"  id="contrasena" name="contrasena" placeholder="contraseña">
+        </div>
+       <input type="button" class="button" value="ingresar" onclick="validar()">
+    </form>
+</div>
+
+
+
+
+
+
+
+
+.form{
+
+  background-color: rgb(179, 59, 59);
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px 40px;
+ 
+}
+
+.todo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body{
+  font-family: "lato",sans-serif;
+  
+}
+
+.title{
+  color: aliceblue;
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.imputcontainer{
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+ 
+}
+
+.input{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 2px  solid rgb(253, 253, 253);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 0 20px;
+  background: none;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.label{
+  color: aliceblue;
+  margin-left: 7px;
+  margin-top: 9px;
+ 
+}
+
+
+::placeholder{
+
+  color: transparent;
+}
+
+.button{
+  display: block;
+  margin-left: auto;
+  padding: 8PX 15PX;
+  border: none;
+  background-color: rgb(200, 81, 81);
+  color: rgb(253, 249, 249);
+  border-radius: 6px ;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+
+}
+.button:hover{
+  background-color: brown;
+  transform: translatex(-1px);
+}
+
+.input:hover{
+  border: 2PX solid rgb(227, 83, 83);
+}
+.input:focus + .label{
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14PX;
+  font-weight: 600;
+  color:brown;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IHAP - Plataforma Web</title>
+
+    <link rel="stylesheet" href="3,an.votacion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '#image-slider' ).mount();
+      } );
+    </script>
+
+<script>
+    function validar() {
+        var usuario= document.getElementById("usuario").value;
+        var contrasena = document.getElementById("contrasena").value;
+        
+        if(usuario=== "maria" && contrasena=== "maria"){
+            alert("Inicio de sesión exitoso");
+            window.location.href="4,[ihap] Vota aqui.html"
+        }else{
+            alert("Inicio de sesión fallido")
+        }
+    }
+</script>
+<style>
+    body {
+        background-image: url(https://img.freepik.com/vector-gratis/banner-degradado-desenfoque-abstracto-moderno-moderno-pagina-web_1017-43269.jpg?w=740&t=st=1698784211~exp=1698784811~hmac=c23f24c8ed9fe8bea4e33edbb8d725c47a764a919c09bb386558ef32987a78cb);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+</head>
+
+<body >
+    <div class="todo">
+        <div class="logo">
+            <img src="fotos/ihap blanco.png" width="80PX" height="80PX">
+           <H1 class="IHAP" >IHAP</H1>
+           <p class="plataforma"   >Plataforma Web Sistematizada Que Permite La Contabilidad De Votos</p>
+
+        </div>
+
+        <div class="todo1">
+            <form action="" class="form">
+                <h1 class="title"> ¡Vamos a Votar! </h1>
+                <div class="imputcontainer" >
+                    <label for="" class="label" >Nombre </label>
+                    <input type="text" class="input" id="usuario" name="usuario" placeholder="Usuario">
+                </div>
+                <br>
+                <div class="imputcontainer">
+                    <label  for="" class="label"> Apellido </label>
+                    <input type="text" class="input"  id="contrasena" name="contrasena" placeholder="contraseña">
+                </div>
+                <br>
+                <div class="imputcontainer">
+                    <label  for="" class="label">  ID de estudiante </label>
+                    <input type="text" class="input"  id="contrasena" name="contrasena" placeholder="contraseña">
+                </div>
+                <br>
+               <input type="button" class="button" value="Ingresar" onclick="validar()">
+            </form>
+        </div>
+
+
+        <a href="4,[Ihap] Vota aqui.html" class="boton-seccion">Siguiente</a>
+
+
+
+        
+
+        
+        
+
+    </div>
+</body>
+</html>

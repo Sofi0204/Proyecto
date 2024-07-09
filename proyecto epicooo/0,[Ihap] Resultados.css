@@ -1,0 +1,154 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.eslogan {
+    font-size: 1em;
+    margin: 0; /* Elimina el margen predeterminado */
+    margin-top: 5px; /* Ajusta el margen superior según tus preferencias */
+    align-self: start; /* Alinea verticalmente en la parte superior */
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el header en dos columnas iguales */
+    background-color: #2b52cf;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 95%;
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+
+
+
+.IHAP{
+    color: #ffffff;
+    margin: 0; /* Elimina el margen predeterminado */
+    margin-top: 5px; /* Ajusta el margen superior según tus preferencias */
+    align-self: start; /* Alinea verticalmente en la parte superior */
+}
+
+
+
+.logo{
+    text-align: left;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+
+
+/* Estilos para las imágenes y sus textos en recuadros */
+.centered-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Para que las imágenes se envuelvan en filas si no caben en una sola línea */
+}
+
+
+.image-box {
+    width: 33.33%; /* Para que haya 3 imágenes en una fila (ajusta según sea necesario) */
+    text-align: center; /* Centramos el contenido de los recuadros de imagen */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+
+.contenido {
+    padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+.image-box img {
+    max-width: 100%;
+    height: fit-content;
+}
+
+
+.image-text {
+    margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    font-weight: bold;
+}
+
+
+/* Estilos para el botón de navegación a la otra sección */
+.boton-seccion {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+    right: 10px; /* Ajusta la distancia desde la derecha según tu preferencia */
+    background-color: #2b52cf;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.boton-seccion:hover {
+    background-color: #3d6cb2; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+
+.imagen img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+/* Estilos del recuadro "Ver Resultados" */
+.Ver.Resultados {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Divide el recuadro en dos columnas, siendo la primera más ancha */
+    background-color: #f0f0f0; /* Cambia el color de fondo al que desees */
+    padding: 20px; /* Ajusta el espaciado interno según tus preferencias */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+.vota-aqui {
+    color: #000000; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+form {
+    margin: 0; /* Elimina el margen del formulario */
+}
+
+/* Estilos para el formulario */
+form label {
+    display: block; /* Muestra cada etiqueta en una línea */
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%; /* El formulario ocupa todo el ancho disponible */
+    margin-bottom: 10px; /* Espaciado entre los campos del formulario */
+}
+
+/* Estilos para el botón "Iniciar Sesión" */
+form input[type="submit"] {
+    background-color: #2b52cf;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3d6cb2;
+}
+
+
+.vota-aqui-box {
+    background-color: rgb(255, 255, 255); /* Color de fondo del recuadro */
+    padding: 10px; /* Espaciado interno del recuadro */
+    font-size: 30px;
+}
+
